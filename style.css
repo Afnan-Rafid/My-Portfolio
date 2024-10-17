@@ -1,0 +1,114 @@
+body {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+  background-color: rgb(25, 24, 24);
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.image {
+    position: absolute;
+    bottom: 135px;
+    left: 125px;
+}
+
+#about {
+  position: relative;
+  z-index: -1;
+}
+
+
+a {
+    text-decoration: none;
+    letter-spacing: 0em;
+    display: flex;
+    padding: 2px;
+    position: relative;
+  }
+
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: rgb(46, 216, 12);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+  a:hover {
+    color: rgb(46, 216, 12);
+  }
+
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  @media screen and (max-height: 300px) {
+      ul {
+          margin-top: 40px;
+      }
+  }
+ 
+
+.left {
+  width: 50%;
+
+}
+
+.right {
+  width: 70%;
+  margin-top: 30px;
+}
+
+.right button {
+  margin-top: 20px;
+  background-color: #22C55E;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  width: 150px;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.right button:hover {
+  background-color: #4fde83;
+}
+
+
+.skills .box {
+  background: #22C55E;
+  height: 450px;
+  width: 300px;
+  align-items: center;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.skills .image-h:hover {
+  transform: scale(1);
+  border-radius: 10px;
+}
+
+.skills .box:hover {
+  transform: scale(1.20);
+  border-radius: 10px;
+}
+
+.icon i {
+   font-size: 50px;
+   color: white;
+}
+
+

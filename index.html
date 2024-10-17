@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/5a35b6a23c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <Header>
+        <nav class="flex items-center">
+           <div class="flex justify-between container mx-auto px-10 py-5 items-center">
+             <h2 class="text-3xl font-semibold items-center text-white">My  <span class="text-green-500">Portfolio</span></h2>
+             <ul class="flex gap-10 text-xl font-normal items-center pt-3 text-white">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#">Achievements</a></li>
+             </ul>
+           </div>
+        </nav>
+          <!--About Section-->
+        <div class="flex container mx-auto px-10 py-20" id="about">
+            <div class=" left ml-10">
+                <video  height="400" width="400" class="relative rounded-full" autoplay loop muted src="videos/bg1.mp4"></video>
+                <img  width="300" height="300" class="rounded-full image"  src="images/Afnan.jpg" alt="">
+            </div>
+
+            <div class="right">
+                  <div>
+                    <h1 class="text-white text-5xl font-semibold">Hey I'm <span class="text-green-500">Afnan Rafid</span></h1>
+                    <p class="text-white mt-5">A 20-year-old frontend developer passionate about creating seamless and visually compelling web experiences. With a strong foundation in HTML, CSS, and JavaScript, I find joy in bringing design concepts to life through clean, efficient code. My passion extends beyond just coding—my background in graphics design allows me to approach projects with a creative mindset, ensuring that the user interface is both functional and aesthetically pleasing. Additionally, my certificate in digital marketing gives me a broader understanding of how design and web development can impact business growth. I'm driven to continue learning and refining my craft to build impactful digital solutions.</p>
+                    <button href="https://drive.google.com/file/d/15r1XL00Y6k_COqo1BPw27jKL1fShrxDM" >Download Resume</button>
+                  </div>
+            </div>
+        </div>
+    </Header>
+   
+    <main>
+        <!--Skills-->
+        <section class="Skills container mx-auto px-10 py-5" id="skills">
+            <div >
+                <h1 class="text-5xl text-white text-center mb-20 hover:underline">Skills</h1>
+            </div>
+
+            <div class="flex justify-evenly">
+                <div class="box">
+                    <img height="100" width="300" class="rounded-md image-h" src="images/Frontend.jpg" alt="">
+                    <h2 class="text-xl text-center text-white font-bold pt-2">Frontend Dev</h2>
+                    <p class="text-center p-3">Proficient in HTML, CSS, and JavaScript to create responsive, interactive websites.</p>
+               </div>
+   
+               <div class="box">
+                   <img height="100" width="300" class="rounded-md image-h" src="images/Graphics.jpg" alt="">
+                   <h2 class="text-xl text-center text-white font-bold pt-5">Graphics Designer</h2>
+                   <p class="text-center p-3">Strong design skills with an eye for detail, ensuring visually appealing user interfaces.</p>
+              </div>
+
+              <div class="box">
+                <img height="100" width="300" class="rounded-md image-h" src="images/Digital.jpg" alt="">
+                <h2 class="text-xl text-center text-white font-bold pt-5">Digital Marketing (Certified)</h2>
+                <p class="text-center p-3">Certified in digital marketing, with knowledge of SEO, content marketing, and user engagement strategies.</p>
+              </div>
+            </div>
+        </section>
+
+        <!--Projects-->
+
+        <section>
+            <div id="projects">
+                <h1 class="text-5xl text-white text-center mb-20 mt-20 hover:underline">Projects</h1>
+
+                <div class="flex justify-evenly container mx-auto px-20 py-5 videos">
+                    <a href="https://influencer-products-coral.vercel.app/" target="_blank"><video height="500" width="500" class="rounded-md" autoplay loop muted src="videos/Influencer Products.mp4"></video></a>
+                    <a href="https://flower-shop-liard.vercel.app/"><video height="500" width="500" class="rounded-md" autoplay loop muted src="videos/Flower Shop.mp4"></video></a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <ul>
+                <li class="text-white">Contact Me</li>
+                <ul class="text-white">
+                    <li>Email : afnanrafid049@gmailcom</li>
+                    <li>Phone : 01843761875</li>
+                    <li>Address : Chata Masjid Road, Kamrangirchar, Dhaka</li>
+                </ul>
+            </ul>
+
+        </div>
+
+        <div class="icon flex">
+            <a href=""> <i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
